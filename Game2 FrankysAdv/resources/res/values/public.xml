@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="id" name="unitySurfaceView" id="2130771968" />
+    <public type="mipmap" name="app_icon" id="2130837504" />
+    <public type="mipmap" name="app_icon_round" id="2130837505" />
+    <public type="string" name="FreeformWindowOrientation_landscape" id="2130903040" />
+    <public type="string" name="FreeformWindowOrientation_portrait" id="2130903041" />
+    <public type="string" name="FreeformWindowSize_maximize" id="2130903042" />
+    <public type="string" name="FreeformWindowSize_phone" id="2130903043" />
+    <public type="string" name="FreeformWindowSize_tablet" id="2130903044" />
+    <public type="string" name="app_name" id="2130903045" />
+    <public type="string" name="game_view_content_description" id="2130903046" />
+    <public type="style" name="BaseUnityTheme" id="2130968576" />
+    <public type="style" name="UnityThemeSelector" id="2130968577" />
+    <public type="style" name="UnityThemeSelector.Translucent" id="2130968578" />
+</resources>

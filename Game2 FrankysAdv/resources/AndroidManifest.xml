@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" android:installLocation="preferExternal" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="com.DefaultCompany.FrankysAdventure_1" platformBuildVersionCode="30" platformBuildVersionName="11">
+    <uses-sdk android:minSdkVersion="22" android:targetSdkVersion="30"/>
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true"/>
+    <uses-feature android:glEsVersion="30000"/>
+    <uses-feature android:name="android.hardware.vulkan.version" android:required="false"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <application android:label="@string/app_name" android:icon="@mipmap/app_icon" android:extractNativeLibs="true">
+        <activity android:theme="@style/UnityThemeSelector" android:name="com.unity3d.player.UnityPlayerActivity" android:launchMode="singleTask" android:screenOrientation="landscape" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale" android:hardwareAccelerated="false" android:resizeableActivity="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="unityplayer.UnityActivity" android:value="true"/>
+            <meta-data android:name="android.notch_support" android:value="true"/>
+        </activity>
+        <meta-data android:name="unity.splash-mode" android:value="0"/>
+        <meta-data android:name="unity.splash-enable" android:value="true"/>
+        <meta-data android:name="unity.launch-fullscreen" android:value="true"/>
+        <meta-data android:name="unity.allow-resizable-window" android:value="false"/>
+        <meta-data android:name="notch.config" android:value="portrait|landscape"/>
+        <meta-data android:name="unity.auto-report-fully-drawn" android:value="true"/>
+        <activity android:theme="@style/Theme.NoTitleBar.Fullscreen" android:name="com.unity3d.services.ads.adunit.AdUnitActivity" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.unity3d.services.ads.adunit.AdUnitTransparentActivity" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:hardwareAccelerated="false"/>
+        <activity android:theme="@style/Theme.NoTitleBar.Fullscreen" android:name="com.unity3d.services.ads.adunit.AdUnitSoftwareActivity" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:hardwareAccelerated="false"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+    </application>
+</manifest>
